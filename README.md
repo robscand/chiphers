@@ -21,11 +21,11 @@ bash: ./app.py: /usr/bin/python3^M: bad interpreter: No such file or directory
 
 *Шифр Цезаря*
 
-![scr_caesar](https://user-images.githubusercontent.com/49130229/64..)
+![scr_caesar](https://user-images.githubusercontent.com/49130229/64461605-53f3b400-d106-11e9-8a7e-800948973772.png)
 
 *Шифр Эль-Гамаля*
 
-![scr_elgam](https://user-images.githubusercontent.com/49130229/64..)
+![scr_caesar](https://user-images.githubusercontent.com/49130229/64461605-53f3b400-d106-11e9-8a7e-800948973772.png)
 
 #### Детали
 Для разработки графического интерфейса программы использовалась библиотека PyQt5.
