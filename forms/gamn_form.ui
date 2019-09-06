@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>155</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Гаммирование по модулю N</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelKey">
+       <property name="text">
+        <string>Ключ:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEditKey">
+       <property name="toolTip">
+        <string>Введите ключ. Это должно быть одно слово,
+состоящее из букв русского алфавита без Ё.</string>
+       </property>
+       <property name="maxLength">
+        <number>35</number>
+       </property>
+       <property name="placeholderText">
+        <string>Введите слово</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelMess">
+       <property name="text">
+        <string>Сообщение:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEditMess">
+       <property name="toolTip">
+        <string>Введите несколько русских слов без буквы Ё.
+В качестве разделителя допустимы только пробелы.</string>
+       </property>
+       <property name="maxLength">
+        <number>99</number>
+       </property>
+       <property name="placeholderText">
+        <string>Введите предложение</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineAnswer">
+     <property name="toolTip">
+      <string>Поле итогового сообщения</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Место для ответа</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btnCrypt">
+       <property name="text">
+        <string>Зашифровать</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnDecrypt">
+       <property name="text">
+        <string>Расшифровать</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnNewCrypt">
+     <property name="text">
+      <string>Новый шифр</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
